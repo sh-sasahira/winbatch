@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "sample"
+version = "0.0.1"
+description = "sample"
+authors = ["Your Name <you@example.com>"]
+license = "n"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+pytest = "^8.3.4"
+pytest-xdist = "^3.6.1"
+pyyaml = "^6.0.2"
+ruamel-yaml = "^0.18.10"
+gitpython = "^3.1.44"
+pygithub = "^2.6.1"
+click = "^8.2.0"
+pyinstaller = "^6.13.0"
+tqdm = "^4.67.1"
+mypy = "^1.15.0"
+bandit = "^1.8.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
