@@ -19,6 +19,7 @@ pyinstaller = "^6.13.0"
 tqdm = "^4.67.1"
 mypy = "^1.15.0"
 bandit = "^1.8.3"
+cryptography = "^45.0.3"
 
 
 [tool.poetry.group.dev.dependencies]
