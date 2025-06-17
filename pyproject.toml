@@ -20,11 +20,11 @@ tqdm = "^4.67.1"
 mypy = "^1.15.0"
 bandit = "^1.8.3"
 cryptography = "^45.0.3"
+pip = "^25.1.1"
 polars = "^1.30.0"
 plotly = "^6.1.2"
 orjson = "^3.10.18"
-django = "^5.2.3"
-colorama = "^0.4.6"
+sample-ext-lib = {path = "sample-ext-lib/dist/sample_ext_lib-0.1.0.tar.gz"}
 
 
 [tool.poetry.group.dev.dependencies]
