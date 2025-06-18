@@ -22,7 +22,7 @@ impl Book {
     }
 
     pub fn get_value(&self, sheet: String, address: String) -> String {
-        let worksheet = self.get_sheet_by_name(sheet);
+        let worksheet = self.get_sheet_by_name(&sheet);
         return match worksheet {
             Some(ws) => ws.get_value(address),
             None => "Sheet not found".to_string(),
@@ -31,7 +31,11 @@ impl Book {
 }
 
 impl Book {
-    pub fn get_sheet_by_name(&self, name: String) -> Option<&Worksheet> {
-        self.value.get_sheet_by_name(&name)
+    pub fn get_sheet_by_name(&self, name: &String) -> Option<&Worksheet> {
+        self.value.get_sheet_by_name(name)
+    }
+
+    pub fn get_sheet_by_index(&self, index: &usize) -> Option<&Worksheet> {
+        self.value.get_sheet(index)
     }
 }
